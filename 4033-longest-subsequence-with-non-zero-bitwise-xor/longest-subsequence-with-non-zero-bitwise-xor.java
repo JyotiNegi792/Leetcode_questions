@@ -12,17 +12,12 @@ class Solution {
             }
         }
 
-        // Case 1: Entire array has non-zero XOR
         if (xor != 0) {
             return n;
         }
-
-        // Case 2: All elements are zero
         if (!hasNonZero) {
             return 0;
         }
-
-        // Case 3: Total XOR is 0, but there is a non-zero element
         return n - 1;
     }
 }
